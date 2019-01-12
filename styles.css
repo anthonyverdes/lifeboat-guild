@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Permanent+Marker');
+
+
+body {
+    margin: 0;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3,
+p {
+    font-family: 'Istok Web', sans-serif;
+}
+
+.banner {
+    background-image: url(https://media.giphy.com/media/7SQUBnB8ZB2kAVmaPb/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1 {
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    padding: 3rem 0;
+    color: #fff;
+    text-align: center;
+    font-size: 7rem;
+    background-color: rgba(66, 134, 244, .45);
+}
+
+h3 {
+    margin: 1em 0;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+footer {
+    margin: 0;
+    background: #34373a;
+    text-align: center;
+}
+
+footer p {
+    padding: 2rem 0;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
