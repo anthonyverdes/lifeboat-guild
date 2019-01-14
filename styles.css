@@ -42,6 +42,7 @@ h3 {
 
 .content {
     position: relative;
+    overflow: hidden;
 }
 
 .content::after {
