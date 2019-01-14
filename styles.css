@@ -11,14 +11,87 @@ body {
 }
 
 h3,
-p {
+h4,
+p,
+a {
     font-family: 'Istok Web', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.banner {
-    background-image: url(https://media.giphy.com/media/7SQUBnB8ZB2kAVmaPb/giphy.gif);
-    background-repeat: no-repeat;
+p {
+    margin: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all .75s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 5rem 0 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.content {
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    bottom: 0;
+    right: -50%;
+    transform: translate(-15%);
+    background-image: url(images/anchor.svg);
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 75%;
+    width: 75%;
+    position: absolute;
+    z-index: -1;
+    opacity: .15;
+}
+
+.main-nav {
+    background-color: #34373a;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.main-nav a:hover {
+    color: #669df4;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-nav li {
+    margin: auto;
+}
+
+.main-nav li a {
+    font-size: 1rem;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
 }
 
 .banner h1 {
@@ -31,11 +104,70 @@ p {
     background-color: rgba(66, 134, 244, .45);
 }
 
-h3 {
-    margin: 1em 0;
+.main-content {
+    max-width: 900px;
+    margin: 0 auto 5rem;
+}
+
+.main-content h3 {
+    border-bottom: 3px solid #4286f4;
+    line-height: .8;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.raid-times-info,
+.rated-bgs-info {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.raid-times-info li,
+.rated-bgs-info li {
     text-align: center;
-    font-size: 3rem;
+    border: 3px solid #34373a;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.raid-times-info h3,
+.rated-bgs-info h3 {
+    font-style: normal;
+    border-bottom: none;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.rated-bgs-info li {
+    padding: 1rem;
+}
+
+.rated-bgs-info h4 {
+    background:  #e2e2e2;
+    border-radius: 10px;
+}
+
+
+.discord a {
     text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #4286f4;
+    padding: 1rem 3rem;
+    background-color: #4286f4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 250px;
+}
+
+.discord a:hover {
+    background-color: #669df4;
+    border-color: #669df4;
 }
 
 footer {
