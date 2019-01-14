@@ -43,6 +43,7 @@ h3 {
 .content {
     position: relative;
     overflow: hidden;
+    flex: 1;
 }
 
 .content::after {
@@ -175,6 +176,7 @@ footer {
     margin: 0;
     background: #34373a;
     text-align: center;
+    flex: 1;
 }
 
 footer p {
