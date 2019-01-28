@@ -1,31 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Istok+Web|Permanent+Marker');
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|PT+Sans');
 
 body {
     margin: 0;
-    font-size: 16px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-h3,
-h4,
-p,
-a {
-    font-family: 'Istok Web', sans-serif;
+h1, h2, h3, h4 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
     margin: 0;
-    padding: 0;
 }
 
-p {
-    margin: .5rem 0;
+p, button {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    margin: 0;
 }
 
-a {
-    text-decoration: none;
-    transition: all .75s;
+button:focus {
+    outline: none;
 }
 
 ul {
@@ -34,137 +26,96 @@ ul {
     padding: 0;
 }
 
-h3 {
-    margin: 5rem 0 0;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-.content {
-    position: relative;
-    overflow: hidden;
-    flex: 1;
-}
-
-.content::after {
-    content: "";
+.video-background {
+    position: fixed;
+    right: 0;
     bottom: 0;
-    right: -50%;
-    transform: translate(-15%);
-    background-image: url(images/anchor.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 75%;
-    width: 75%;
-    position: absolute;
-    z-index: -1;
-    opacity: .15;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -100;
 }
 
-.main-nav {
-    background-color: #34373a;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.main-nav a {
-    color: #fff;
-    padding: 1rem;
-    font-size: 2rem;
-}
-
-.main-nav a:hover {
-    color: #669df4;
-}
-
-.main-nav ul {
+.nav {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 1rem 0;
 }
 
-.main-nav li {
-    margin: auto;
-}
-
-.main-nav li a {
-    font-size: 1rem;
-}
-
-.logo {
-    font-family: 'Permanent Marker', cursive;
-}
-
-.banner h1 {
-    font-family: 'Permanent Marker', cursive;
-    margin: 0;
-    padding: 3rem 0;
+.nav button {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
     color: #fff;
-    text-align: center;
-    font-size: 7rem;
-    background-color: rgba(66, 134, 244, .45);
 }
 
-.main-content {
-    max-width: 900px;
-    margin: 0 auto 5rem;
+.nav button:hover {
+    color: #93bcff;
 }
 
-.main-content h3 {
-    border-bottom: 3px solid #4286f4;
+.guild-name {
+    color: #fff;
+    font-size: 12rem;
+    font-weight: normal;
+    margin: 2rem;
     line-height: .8;
-    font-style: italic;
-    margin-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
 }
 
-.raid-times-info,
-.rated-bgs-info {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.raid-times-info li,
-.rated-bgs-info li {
-    text-align: center;
-    border: 3px solid #34373a;
-    border-radius: 10px;
+.guild-info,
+.raid-times,
+.rbg-times,
+.discord {
+    color: #fff;
+    max-width: 750px;
+    margin: 2rem auto;
+    background-color: rgba(56, 56, 56, .75);
+    border-radius: 20px;
     padding: 2rem;
-    background-color: #fff;
+    display: none;
 }
 
-.raid-times-info h3,
-.rated-bgs-info h3 {
-    font-style: normal;
-    border-bottom: none;
-    font-size: 2rem;
-    margin-top: 0;
+.guild-info p,
+.discord p {
+    margin: 1rem 0;
 }
 
-.rated-bgs-info li {
-    padding: 1rem;
-}
-
-.rated-bgs-info h4 {
-    background:  #e2e2e2;
-    border-radius: 10px;
-}
-
-footer {
+.guild-info__title,
+.raid-times__title,
+.rbg-times__title,
+.discord__title {
+    text-align: left;
+    border-bottom: 2px solid #93bcff;
+    font-size: 3rem;
     margin: 0;
-    background: #34373a;
+    padding-left: 1.5rem;
+}
+
+.raid-times__list,
+.rbg-times__list {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.raid-times__list-item,
+.rbg-times__list-item {
     text-align: center;
-    flex: 1;
+    border: 2px solid #93bcff;
+    padding: 3rem;
+    margin: 1rem;
 }
 
-footer p {
-    padding: 2rem 0;
-    color: #fff;
+.raid-times__list-item h4,
+.rbg-times__list-item h4 {
+    margin: 0;
+    font-size: 2rem;
 }
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-

@@ -5,83 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lifeboat Guild | World of Warcraft</title>
         <link href="styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="app.js"></script>
     </head>
     <body>
+        <video autoplay muted loop class="video-background">
+            <source src="images/back.mp4" type="video/mp4">
+        </video>
         <div class="content">
-
-            <section class="main-nav">
-                <a class="logo" href="#">Lifeboat</a>
-                <ul>
-                    <li><a href="#">Roster</a></li>
-                    <li><a href="#discord">Discord</a></li>
+            <nav class="nav">
+                <button class="nav__guild-info">Guild Info</button>
+                <button class="nav__raid-times">Raid Times</button>
+                <button class="nav__rbg-times">RBG Times</button>
+                <button class="nav__discord">Discord</button>
+            </nav>
+            <h1 class="guild-name">Lifeboat</h1>
+            <div class="guild-info">
+                <h3 class="guild-info__title">Guild Info</h3>
+                <p class="guild-info__text">Welcome to Lifeboat! We are a fun, social, horde guild on Bleeding Hollow with both PvE and PvP core teams. More information on joining and events are coming soon. </p>
+            </div>
+            <div class="raid-times">
+                <h3 class="raid-times__title">Raid Times</h3>
+                <ul class="raid-times__list">
+                    <li class="raid-times__list-item">
+                        <h4>Tuesday</h4>
+                        <p>8:00PM - 11:00PM EST</p>
+                    </li>
+                    <li class="raid-times__list-item">
+                        <h4>Thursday</h4>
+                        <p>8:00PM - 11:00PM EST </p>
+                    </li>
                 </ul>
-            </section>
-
-            <section class="banner">
-                <h1>Lifeboat</h1>
-            </section>
-
-            <section class="main-content">
-
-                <div class="guild-info">
-                    <h3>Guild Info</h3>
-                    <p>
-                        Welcome to Lifeboat! We are a fun, social, horde guild on Bleeding Hollow with both PvE and PvP core teams. More information on joining and events are coming soon. 
-                    </p>
-                </div>
-
-                <div class="raid-times">
-                    <h3>Raid Times</h3>
-                    <ul class="raid-times-info">
-                        <li>
-                            <h3>Tuesday</h3>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Thursday</h3>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="rated-bgs">
-                    <h3>RBG Times</h3>
-                    <ul class="rated-bgs-info">
-                        <li>
-                            <h3>Monday</h3>
-                            <h4>Fun</h4>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Wednesday</h3>
-                            <h4>Fun</h4>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Saturday</h3>
-                            <h4>Pushing</h4>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Sunday</h3>
-                            <h4>Pushing</h4>
-                            <p>8:00 PM - 11:00 PM</p>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div id="discord" class="discord">
-                    <h3>Discord</h3>
-                    <p>
-                        We use discord as our main place to organize and communicate most information. Ask a member in-game for an invitation!
-                    </p>
-                </div>
-            
-            </section>
+            </div>
+            <div class="rbg-times">
+                <h3 class="rbg-times__title">RBG Times</h3>
+                <ul class="rbg-times__list">
+                    <li class="rbg-times__list-item">
+                        <h4>Monday</h4>
+                        <p>8:00PM - 11:00PM EST</p>
+                    </li>
+                    <li class="rbg-times__list-item">
+                        <h4>Wednesday</h4>
+                        <p>8:00PM - 11:00PM EST</p>
+                    </li>
+                    <li class="rbg-times__list-item">
+                        <h4>Saturday</h4>
+                        <p>8:00PM - 11:00PM EST</p>
+                    </li>
+                    <li class="rbg-times__list-item">
+                        <h4>Sunday</h4>
+                        <p>8:00PM - 11:00PM EST</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="discord">
+                <h3 class="discord__title">Discord</h3>
+                <p>We use discord as our main place to organize and communicate most information. Message a guild member in-game for an invite!</p>
+            </div>
         </div>
-
-        <footer>
-            <p>Made with ❤️ by <a href="https://twitter.com/anthonyverdes">@anthonyverdes</a></p>
-        </footer>
     </body>
 </html>
