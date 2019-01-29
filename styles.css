@@ -71,7 +71,6 @@ ul {
 
 .guild-info,
 .raid-times,
-.rbg-times,
 .discord {
     color: #fff;
     max-width: 750px;
@@ -89,7 +88,6 @@ ul {
 
 .guild-info__title,
 .raid-times__title,
-.rbg-times__title,
 .discord__title {
     text-align: left;
     border-bottom: 2px solid #93bcff;
@@ -98,24 +96,21 @@ ul {
     padding-left: 1.5rem;
 }
 
-.raid-times__list,
-.rbg-times__list {
+.raid-times__list {
     display: flex;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
 }
 
-.raid-times__list-item,
-.rbg-times__list-item {
+.raid-times__list-item {
     text-align: center;
     border: 2px solid #93bcff;
     padding: 3rem;
     margin: 1rem;
 }
 
-.raid-times__list-item h4,
-.rbg-times__list-item h4 {
+.raid-times__list-item h4 {
     margin: 0;
     font-size: 2rem;
 }
